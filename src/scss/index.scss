@@ -72,8 +72,6 @@ body {
   opacity: 1;
 }
 
-/* 트랜지션으로 버튼 사라지는 호버 속도 늦추기 */
-
 /* 사이드바 섹션 */
 
 ul {
@@ -132,47 +130,39 @@ ul {
   height: 3.21285rem;
 }
 
+//헤더 상단 광고 영역
+
 .mention {
-  width: 100%;
+  @include pos($t: 0);
+  @include box($w: 100%);
   background: $primary-color;
-  position: absolute;
-  top: 0;
 
   &__box {
-    width: 1050px;
+    @include po;
+    @include box($w: rem(1050px));
     @include autoMargin;
-    position: relative;
   }
 
   &__box__text {
     display: block;
     @include autoMargin;
-    @include paddingY(11.5px);
+    @include paddingY(rem(11.5px));
+    @include font($fs: 1rem, $cl: $white);
     text-align: center;
-    color: $white;
-    font-size: 1rem;
   }
 
   &__box__button {
-    position: absolute;
-    right: 0;
-    border: 0;
-    background-color: transparent;
-    background-image: url(./../assets/icons/Close.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    @include buttonClear($url: "./../assets/icons/Close.svg");
+    @include pos($r: 0);
     top: 50%;
     transform: translateY(-50%);
-    height: 42px;
-    width: 42px;
-    cursor: pointer;
+    @include box(rem(42px), rem(42px));
   }
 }
 
 // 상품 섹션
 
 .goods {
-
   // 전체 배치
   &Up,
   &Down {
@@ -257,7 +247,6 @@ ul {
 }
 
 .goods {
-
   // 버튼 배치
   &__list {
     @include po();
