@@ -133,7 +133,7 @@
 - [x] 플래시 전용 페이지 피하기
 - [x] Validator로 마크업 및 CSS 오류 제거
 - [x] anchor 태그를 활용한 적절한 키워드 배치
-- [x] <a href="https://www.notion.so/bfbe18a79c784f518d4c2b4badb25799?v=7027980ddf904421bc6182e654722d59">접근성 체크리스트</a> 확인
+- [x] <a href="https://three-crustacean-582.notion.site/a6c144cb282d4f3c95a0bd019e3fc5f1?v=a01c05dac7ca4b4e91803597f6e9920f&pvs=4">접근성 체크리스트</a> 확인
 - [ ] 여러 개의 페이지로 나누어진 콘텐츠 검색 최적화 – 시리즈/연재
 - [ ] 모든 페이지가 유입 페이지가 되도록 사이트 구성
 - [ ] HTTPS 사용 권장
